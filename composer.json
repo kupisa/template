@@ -1,0 +1,25 @@
+{
+    "name": "kupisa/template",
+    "description": "Themes and modules made for particular sites of the Kupiša platform.",
+    "type": "project",
+    "license": "proprietary",
+    "require-dev": {
+        "kupisa/sdk": "dev-main",
+        "phpstan/phpstan": "^2.1"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/kupisa/sdk"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    }
+}

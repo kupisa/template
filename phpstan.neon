@@ -1,0 +1,12 @@
+# Checks the themes and modules against the public classes of the platform, which the Kupiša SDK carries as stubs.
+parameters:
+    level: 5
+    paths:
+        - themes
+        - modules
+    excludePaths:
+        - */messages/*
+    scanDirectories:
+        - vendor/kupisa/sdk/stubs
+    scanFiles:
+        - vendor/yiisoft/yii2/Yii.php

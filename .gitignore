@@ -1,0 +1,8 @@
+# The SDK and the tools, installed by `composer install`; the SDK is always the one of the latest release.
+/vendor
+/composer.lock
+
+# IDE and OS files
+.idea
+.vscode
+.DS_Store

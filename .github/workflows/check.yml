@@ -1,0 +1,22 @@
+name: Check
+
+on: [push, pull_request]
+
+jobs:
+    phpstan:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+
+            - uses: shivammathur/setup-php@v2
+              with:
+                  php-version: '8.4'
+
+            - run: composer install --no-interaction --no-progress
+
+            # A repository without a theme or a module yet has nothing to check.
+            - run: |
+                  if [ -n "$(find themes modules -name '*.php' -print -quit)" ]; then
+                      vendor/bin/phpstan --no-progress
+                  fi
