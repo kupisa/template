@@ -6,3 +6,6 @@
 .idea
 .vscode
 .DS_Store
+
+# The sites this copy is connected to (`vendor/bin/kupisa connect`), with the SSH key of this computer.
+/.kupisa.json
