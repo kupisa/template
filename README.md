@@ -27,6 +27,17 @@ vendor/bin/phpstan
 checks every theme against the public classes of the platform, so a call to something the platform does not
 offer is found before the code reaches a server. It runs on every push too (`.github/workflows/check.yml`).
 
+## Seeing it on a site
+
+```
+vendor/bin/kupisa connect
+vendor/bin/kupisa dev
+```
+
+`connect` asks for the host name of your site and for your SSH key, once. `dev` then uploads your themes and
+modules and keeps uploading every file as you save it; `vendor/bin/kupisa push` uploads once. The
+[README of the SDK](https://github.com/kupisa/sdk#the-command-line-tool) has every command.
+
 ## Keeping up with the platform
 
 ```
