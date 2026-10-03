@@ -34,9 +34,11 @@ vendor/bin/kupisa connect
 vendor/bin/kupisa dev
 ```
 
-`connect` asks for the host name of your site and for your SSH key, once. `dev` then uploads your themes and
-modules and keeps uploading every file as you save it; `vendor/bin/kupisa push` uploads once. The
-[README of the SDK](https://github.com/kupisa/sdk#the-command-line-tool) has every command.
+`connect` asks for the host name of your site and for your SSH key, once. `dev` then uploads `themes/` and
+`modules/` and keeps uploading every file as you save it; `vendor/bin/kupisa push` uploads once. On the server
+they land in the `sites/` directory of the platform under the name of the directory of this repository on your
+computer: `.../sites/template/themes/` here is `sites/template/themes/` there, and what is deleted here is deleted
+there. The [README of the SDK](https://github.com/kupisa/sdk#the-command-line-tool) has every command.
 
 ## Keeping up with the platform
 
